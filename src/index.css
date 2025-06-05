@@ -1,9 +1,32 @@
 @import "tailwindcss";
+:root{
+  background: #cecece;
 
+  --font-roboto: "Roboto", sans-serif;
+  --green-light: rgb(102, 140, 130);
+  --green-dark: rgb(0, 64, 47);
+  --green-dark-opacity: rgba(0, 64, 47, 0.2);
+  --white: rgb(255, 255, 255);
+  --white-hover: rgba(255, 255, 255, 0.7);
+  --blue: rgb(132, 154, 203);
+}
 
 body {
   max-width: 1440px;
   margin: 0 auto;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-roboto);
+  background-color: #fff;
+  /* overflow: hidden; */
+  
 }
+
+@layer components {
+  .item_menu {
+    @apply block w-full text-center py-[35px] px-10 md:text-[12px] text-[var(--green-dark)] leading-[15px] uppercase  hover:bg-[var(--green-dark)] hover:text-white focus:outline-none focus:ring-2 focus:ring-[var(--green-dark)] transition duration-500 ease-in-out max-[1090px]:px-9 max-[1050px]:px-8 max-[1000px]:px-7 max-[950px]:px-6 max-[900px]:px-5 max-[860px]:px-4 max-[800px]:px-3 ;
+  }
+  .active_link {
+    @apply bg-[var(--green-dark)] text-white font-bold transition-all duration-300 ease-linear ;
+  }
+}
+
 
