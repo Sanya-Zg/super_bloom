@@ -3,7 +3,7 @@ import Button from './Button';
 
 export default function Hero() {
   return (
-    <section className='flex flex-col md:flex-row justify-center md:justify-between gap-10 px-6 lg:px-[145px] md:px-20 pt-20 pb-[70px] bg-[var(--green-light)]'>
+    <section className='flex flex-col md:flex-row justify-center md:justify-between gap-10 px-6 lg:px-[145px] md:px-10 pt-20 pb-[70px] bg-[var(--green-light)]'>
         <div className=' md:max-w-[546px] my-auto'>
            <img src={hero} className='max-w-full mx-auto' alt="Banner" /> 
         </div>

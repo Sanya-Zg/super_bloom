@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-export default function Button({children, to, color, text='12px', bg='transparent', border}) {
+export default function Button({children, to, color='var(--white)', text='12px', bg='transparent', border='var(--white) '}) {
     const link = {
         color: color,
         padding: '0.1rem 1.7rem',

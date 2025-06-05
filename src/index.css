@@ -9,6 +9,10 @@
   --white: rgb(255, 255, 255);
   --white-hover: rgba(255, 255, 255, 0.7);
   --blue: rgb(132, 154, 203);
+  --cream: rgb(255, 244, 227);
+}
+*, ::after, ::before{
+  box-sizing: border-box;
 }
 
 body {
